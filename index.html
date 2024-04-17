@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Spatio-Temporal Motion Retargeting for Quadruped Robots">
+    <meta property="og:title" content="STMR"/>
+    <meta property="og:description" content="Spatio-Temporal Motion Retargeting for Quadruped Robots"/>
+    <!-- <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/> -->
+
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="static/js/change_select.js"></script>
+
+    <title>Spatio-Temporal Motion Retargeting for Quadruped Robots</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <style>
+    .child{
+        text-align: left;
+        height: 350px;
+        margin: 20px;
+        border: 2px solid;
+        background-color: #ececeb;
+    }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Spatio-Temporal Motion Retargeting for Quadruped Robots</h1>
+            <!-- Paper authors -->
+            <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="https://github.com/terry97-guel" target="_blank">Taerim Yoon</a><sup>1</sup>, 
+            </span>
+            <span class="author-block">
+                <a href="https://donghok.me/" target="_blank">Dongho Kang</a><sup>2</sup>, 
+            </span>
+            <span class="author-block">
+                <a target="_blank">Seungmin Kim</a><sup>1</sup>, 
+            </span>
+            <span class="author-block">
+                <a target="_blank">Minsung Ahn</a><sup>3</sup>, 
+            </span>
+            <br>
+            <span class="author-block">
+                <a target="_blank">Stelian Coros</a><sup>2</sup>, 
+            </span>      
+            <span class="author-block">
+                <a href="https://sites.google.com/view/sungjoon-choi/home" target="_blank"> Sungjoon Choi</a><sup>1</sup>
+            </span>
+        </div>
+        <div class="is-size-5 publication-authors">
+            <span class="author-block">Korea University, Korea<sup>1</sup><br>
+                ETH Zurich, Switzerland<sup>2</sup><br>
+                UCLA, USA<sup>3</sup>
+            </span>
+        </div>
+            
+        <div class="column has-text-centered">
+            <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                    <!-- <a href="https://ieeexplore.ieee.org/document/10423093" target="_blank" class="external-link button is-normal is-rounded is-dark"> -->
+                    <a target="_blank" class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (comming soon)</span>
+                    </a>
+                </span>
+                <!-- Github link -->
+                <span class="link-block">
+                    <a href="https://github.com/terry97-guel/STMR_RL" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                    </a>
+                </span>
+
+                <!-- <span class="link-block">
+                    <a href="https://github.com/jeongeun980906/CLARA-Dataset" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+                        <span>Dataset</span>
+                    </a>
+                </span>
+
+                <span class="link-block">
+                    <a href="https://colab.research.google.com/github/jeongeun980906/CLARA-PNP-DEMO/blob/master/DEMO_colab.ipynb" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>DEMO </span>
+                    </a>
+                </span>
+    
+                <span class="link-block">
+                    <a href="https://github.com/CLARARobot/CLARARobot.github.io/blob/master/files/appendix.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Appendix</span>
+                    </a>
+                </span> -->
+            </div>
+        </div>
+</section>
+
+<!--     
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-5">Accepted to Robotics and Automation Letters (RAL)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        This work introduces a motion retargeting approach for legged robots, which aims to create motion controllers that imitate the fine behavior of animals. 
+                        Our approach, namely spatio-temporal motion retargeting (STMR), guides imitation learning procedures by transferring motion from source to target, effectively bridging the morphological disparities by ensuring the feasibility of imitation on the target system.
+                        Our STMR method comprises two components: spatial motion retargeting (SMR) and temporal motion retargeting (TMR).
+                        On the one hand, SMR tackles motion retargeting at the kinematic level by generating kinematically feasible whole-body motions from keypoint trajectories.
+                        On the other hand, TMR aims to retarget motion at the dynamic level by optimizing motion in the temporal domain.
+                        We showcase the effectiveness of our method in facilitating Imitation Learning (IL) for complex animal movements through a series of simulation and hardware experiments. 
+                        In these experiments, our STMR method successfully tailored complex animal motions from various media, including video captured by a hand-held camera, to fit the morphology and physical properties of the target robots. This enabled RL policy training for precise motion tracking, while baseline methods struggled with highly dynamic motion involving flying phases.
+                        Moreover, we validated that the control policy can successfully imitate six different motions in two quadruped robots with different dimensions and physical properties in real-world settings. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <!-- Paper video. -->
+            <h2 class="title is-3">Extracting Motion from Videos</h2>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%">
+                            <source src="assets/03.slide.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+                            <source src="assets/04.slide.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Spatial Motion Retargeting</h2>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-half">
+                    <!-- Figure placeholder -->
+                    <figure>
+                        <img src="assets/SMR.png" alt="Descriptive text of the image">
+                        <!-- <figcaption>Illustration of baseline method and spatial motion retargeting (SMR).</figcaption> -->
+                    </figure>
+                </div>
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video2" autoplay controls muted loop style="width: 100%; height: auto;">
+                            <source src="assets/08.slide.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Temproal Motion Retargeting</h2>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-half">
+                    <!-- Figure placeholder -->
+                    <figure>
+                        <img src="assets/TMR.png" alt="Descriptive text of the image">
+                        <!-- <figcaption>Illustration of baseline method and spatial motion retargeting (SMR).</figcaption> -->
+                    </figure>
+                </div>
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video2" autoplay controls muted loop style="width: 100%; height: auto;">
+                            <source src="assets/11.slide.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Real-world experiments</h2>
+            <!-- First row of videos -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video1" autoplay controls muted loop>
+                            <source src="assets/02.slide.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video2" autoplay controls muted loop>
+                            <source src="assets/sidesteps.m4v" type="video/mp4"> <!-- Ensure the extension and the file name are correct -->
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Second row of videos -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video3" autoplay controls muted loop>
+                            <source src="assets/clip5-1.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="publication-video">
+                        <video poster="" id="video4" autoplay controls muted loop>
+                            <source src="assets/clip5-2.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Kinematic Architecture Search</h2>
+            <figure class="figure text-center">
+                <img src="assets/KAS.png" alt="MY ALT TEXT" style="width: 60%">
+            </figure>
+            <h2 class="subtitle has-text-centered">
+                Kinematic Architecture Search for identify the underlying kinematic structure of the soft robot. <br>
+                This allows holistic control of soft robot with rigid robot.
+            </h2>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Configuration of the soft robot </h2>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="publication-video">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+                            <source src="assets/configuration.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!--BibTex citation -->
+<!-- <section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{yoon2024kinn,
+        title={Kinematics-Informed Neural Networks: Enhancing Generalization Performance of Soft Robot Model Identification}, 
+        author={Taerim Yoon and Yoonbyung Chai and Yeonwoo Jang and Hajun Lee and Junghyo Kim and Jaewoon Kwon and Sungjoon Choi},
+        year={2024},
+        journal={IEEE Robotics and Automation Letters}, 
+    }</code></pre>
+</div>
+</section> -->
